@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>481D7724-FDDD-4881-9793-34DE22611B6B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DrawTextAnimationDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>493755F3873EB004F643B5CD00A95A6DACDF49EA</key>
+		<string>https://github.com/franklinsch/iOSDrawTextAnimation.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>DrawTextAnimationDemo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>493755F3873EB004F643B5CD00A95A6DACDF49EA</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/franklinsch/iOSDrawTextAnimation.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>493755F3873EB004F643B5CD00A95A6DACDF49EA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>493755F3873EB004F643B5CD00A95A6DACDF49EA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DrawTextAnimationDemo</string>
+		</dict>
+	</array>
+</dict>
+</plist>

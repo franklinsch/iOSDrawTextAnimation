@@ -19,7 +19,7 @@ func performStrokeAnimation(#text: String, #font: CTFont, #duration: CFTimeInter
     var groupLayers: [CALayer] = []
     
     for textGroup in textGroups {
-        groupLayers.append(getGroupLayer(textGroup, font))
+        groupLayers.append(getGroupLayer(textGroup, font, borderColor))
     }
     
     var textView = createViewFromLayers(groupLayers)
@@ -37,7 +37,7 @@ func performStrokeAnimation(#text: String, #font: CTFont, #duration: CFTimeInter
     animateSublayers(textView.layer, animation)
 }
 
-func getGroupLayer(textGroup: String, font: CTFont) -> CALayer {
+func getGroupLayer(textGroup: String, font: CTFont, borderColor: CGColor) -> CALayer {
     var unichars = [UniChar](textGroup.utf16)
     var glyphs = [CGGlyph](count: unichars.count, repeatedValue: 0)
     let gotGlyphs = CTFontGetGlyphsForCharacters(font, &unichars, &glyphs, unichars.count)
@@ -50,7 +50,7 @@ func getGroupLayer(textGroup: String, font: CTFont) -> CALayer {
             layer.path = cgpath
             layer.bounds = CGPathGetBoundingBox(cgpath)
             layer.geometryFlipped = true
-            layer.strokeColor = UIColor.blackColor().CGColor
+            layer.strokeColor = borderColor
             layer.fillColor = UIColor.clearColor().CGColor
             layer.lineWidth = 1.0
             layers.append(layer)
