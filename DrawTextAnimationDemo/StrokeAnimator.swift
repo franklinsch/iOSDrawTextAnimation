@@ -11,15 +11,15 @@ import UIKit
 
 
 func performStrokeAnimation(#text: String, #font: CTFont, inView view: UIView) {
-    performStrokeAnimation(text: text, font: font, duration: 1.0, borderColor: UIColor.blackColor().CGColor, inView: view)
+    performStrokeAnimation(text: text, font: font, duration: 1.0, borderWidth: 1.0, borderColor: UIColor.blackColor().CGColor, inView: view)
 }
 
-func performStrokeAnimation(#text: String, #font: CTFont, #duration: CFTimeInterval, #borderColor: CGColor, inView view: UIView) {
+func performStrokeAnimation(#text: String, #font: CTFont, #duration: CFTimeInterval, #borderWidth: CGFloat, #borderColor: CGColor, inView view: UIView) {
     var textGroups = split(text) { $0 == " "}
     var groupLayers: [CALayer] = []
     
     for textGroup in textGroups {
-        groupLayers.append(getGroupLayer(textGroup, font, borderColor))
+        groupLayers.append(getGroupLayer(textGroup, font, borderColor, borderWidth))
     }
     
     var textView = createViewFromLayers(groupLayers)
@@ -37,7 +37,7 @@ func performStrokeAnimation(#text: String, #font: CTFont, #duration: CFTimeInter
     animateSublayers(textView.layer, animation)
 }
 
-func getGroupLayer(textGroup: String, font: CTFont, borderColor: CGColor) -> CALayer {
+func getGroupLayer(textGroup: String, font: CTFont, borderColor: CGColor, borderWidth: CGFloat) -> CALayer {
     var unichars = [UniChar](textGroup.utf16)
     var glyphs = [CGGlyph](count: unichars.count, repeatedValue: 0)
     let gotGlyphs = CTFontGetGlyphsForCharacters(font, &unichars, &glyphs, unichars.count)
@@ -52,7 +52,7 @@ func getGroupLayer(textGroup: String, font: CTFont, borderColor: CGColor) -> CAL
             layer.geometryFlipped = true
             layer.strokeColor = borderColor
             layer.fillColor = UIColor.clearColor().CGColor
-            layer.lineWidth = 1.0
+            layer.lineWidth = borderWidth
             layers.append(layer)
         }
     }

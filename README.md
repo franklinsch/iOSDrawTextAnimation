@@ -8,6 +8,7 @@ The following parameters are customizable:
 - Text
 - Font
 - Duration
+- Border width
 - Border color
 - Enclosing view
 
@@ -27,7 +28,7 @@ You will have to import the `StrokeAnimator.swift` file into your project.
 
 To perform an animation, call `performStrokeAnimation` like so:
 
-	performStrokeAnimation(text: "SWIFT", font: swiftFont, duration: 1.0, borderColor: color, inView: swiftBox)
+	performStrokeAnimation(text: "SWIFT", font: swiftFont, duration: 1.0, borderWidth: 1.0, borderColor: color, inView: swiftBox)
 
 or simply
 
