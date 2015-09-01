@@ -1,4 +1,4 @@
-# iOSDrawTextAnimation
+# iOSDrawTextAnimation (Swift 2)
 ####A text drawing animation for iOS written in Swift
 
 I wanted to make good use of the `CTFontCreatePathForGlyph` function from CoreText, so decided to make a simple drawing animation that works with any string and any font.
@@ -7,6 +7,8 @@ The following parameters are customizable:
 
 - Text
 - Font
+- Spacing between characters
+- Spacing between words
 - Duration
 - Border width
 - Border color
@@ -27,8 +29,16 @@ Using Didot, size 50
 You will have to import the `StrokeAnimator.swift` file into your project.
 
 To perform an animation, call `performStrokeAnimation` like so:
+	
+	performStrokeAnimation(text: "SWFIT",
+						   font: swiftFont,
+						   characterSpacing: 20.0,
+						   wordSpacing: 40.0,
+						   duration: 4.0,
+						   borderWidth: 1.0,
+						   borderColor: color,
+						   inView: swiftBox)
 
-	performStrokeAnimation(text: "SWIFT", font: swiftFont, duration: 1.0, borderWidth: 1.0, borderColor: color, inView: swiftBox)
 
 or simply
 

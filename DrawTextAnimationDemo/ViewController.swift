@@ -15,12 +15,24 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let rocksFont = CTFontCreateWithName("Didot", 50, nil)
         let swiftFont = CTFontCreateWithName("AvenirNext-UltraLight", 50, nil)
+        let rocksFont = CTFontCreateWithName("Didot", 50, nil)
         let color = UIColor.grayColor().CGColor
         
-        performStrokeAnimation(text: "SWIFT", font: swiftFont, duration: 1.0, borderWidth: 1.0, borderColor: color, inView: swiftBox)
-        performStrokeAnimation(text: "ROCKS", font: rocksFont, duration: 1.0, borderWidth: 2.0, borderColor: color, inView: rocksBox)
+        performStrokeAnimation(text: "SWIFT", font: swiftFont, inView: swiftBox)
+        
+        let charSpacing: CGFloat = 20
+        let wordSpacing: CGFloat = 40
+        
+        performStrokeAnimation(text: "ROCKS",
+            font: rocksFont,
+            characterSpacing: charSpacing,
+            wordSpacing: wordSpacing,
+            duration: 4.0,
+            borderWidth: 1.0,
+            borderColor: color,
+            inView: rocksBox)
+
     }
     
     override func didReceiveMemoryWarning() {
