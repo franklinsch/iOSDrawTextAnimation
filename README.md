@@ -30,7 +30,7 @@ You will have to import the `StrokeAnimator.swift` file into your project.
 
 To perform an animation, call `performStrokeAnimation` like so:
 	
-	performStrokeAnimation(text: "SWFIT",
+	performStrokeAnimation(text: "SWIFT",
 						   font: swiftFont,
 						   characterSpacing: 20.0,
 						   wordSpacing: 40.0,
