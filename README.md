@@ -1,4 +1,4 @@
-# iOSDrawTextAnimation (Swift 2)
+# iOSDrawTextAnimation (Swift)
 ####A text drawing animation for iOS written in Swift
 
 I wanted to make good use of the `CTFontCreatePathForGlyph` function from CoreText, so decided to make a simple drawing animation that works with any string and any font.
