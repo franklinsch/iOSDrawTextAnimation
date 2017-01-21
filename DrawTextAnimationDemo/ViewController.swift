@@ -15,9 +15,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let swiftFont = CTFontCreateWithName("AvenirNext-UltraLight", 50, nil)
-        let rocksFont = CTFontCreateWithName("Didot", 50, nil)
-        let color = UIColor.grayColor().CGColor
+        let swiftFont = CTFontCreateWithName("AvenirNext-UltraLight" as CFString?, 50, nil)
+        let rocksFont = CTFontCreateWithName("Didot" as CFString?, 50, nil)
+        let color = UIColor.gray.cgColor
         
         performStrokeAnimation(text: "SWIFT", font: swiftFont, inView: swiftBox)
         
