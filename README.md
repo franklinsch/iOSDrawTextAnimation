@@ -1,7 +1,8 @@
 # UIStrokeAnimatedLabel (Swift)
 ### A UILabel subclass with stroke drawing animations, with customization options
 
-A `UIStrokeAnimatedLabel` is a `UILabel` that has a stroke animation when displayed. Animation duration, stroke width and spacing and easily customizable through Interface Builder or programatically.
+A `UIStrokeAnimatedLabel` is a `UILabel` that has a stroke animation when displayed. 
+Animation duration, stroke width and spacing and easily customizable through Interface Builder or programatically.
 
 ![UIStrokeAnimatedLabel Demo](demo.gif)
 
