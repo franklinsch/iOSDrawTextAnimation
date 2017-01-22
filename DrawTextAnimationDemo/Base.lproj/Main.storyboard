@@ -1,7 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -13,41 +18,41 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dzy-S0-Cov">
-                                <rect key="frame" x="130" y="66" width="341" height="180"/>
-                                <color key="backgroundColor" red="0.91496812708757158" green="1" blue="0.96034355035373686" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="341" id="rea-Ip-JhW"/>
-                                    <constraint firstAttribute="height" constant="180" id="szb-1D-R6X"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eki-Nl-1Xe">
-                                <rect key="frame" x="130" y="298" width="341" height="180"/>
-                                <color key="backgroundColor" red="0.95391229079999995" green="1" blue="0.99553785559999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="341" id="ev2-7T-30N"/>
-                                    <constraint firstAttribute="height" constant="180" id="su0-CE-4HJ"/>
-                                </constraints>
-                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="KKZ-Bb-YcA">
+                                <rect key="frame" x="95" y="262" width="185" height="143"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SWIFT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvZ-L5-3bH" customClass="UIStrokeAnimatedLabel" customModule="DrawTextAnimationDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="184.5" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ROCKS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buY-8s-YWf" customClass="UIStrokeAnimatedLabel" customModule="DrawTextAnimationDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="80" width="184.5" height="62.5"/>
+                                        <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="eki-Nl-1Xe" firstAttribute="top" secondItem="dzy-S0-Cov" secondAttribute="bottom" constant="52" id="Hfb-XC-7yA"/>
-                            <constraint firstAttribute="centerX" secondItem="eki-Nl-1Xe" secondAttribute="centerX" constant="-0.5" id="P48-Xr-OAH"/>
-                            <constraint firstAttribute="centerX" secondItem="dzy-S0-Cov" secondAttribute="centerX" constant="-0.5" id="hOy-bX-swq"/>
-                            <constraint firstItem="dzy-S0-Cov" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="46" id="xzj-2f-pOH"/>
+                            <constraint firstItem="KKZ-Bb-YcA" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="53N-hA-7dP"/>
+                            <constraint firstItem="KKZ-Bb-YcA" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Ko3-EI-Ht1"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="rocksBox" destination="eki-Nl-1Xe" id="zL7-qL-zcP"/>
-                        <outlet property="swiftBox" destination="dzy-S0-Cov" id="ndx-W3-aIv"/>
+                        <outlet property="rocksLabel" destination="buY-8s-YWf" id="eba-8t-usI"/>
+                        <outlet property="swiftLabel" destination="hvZ-L5-3bH" id="3jX-R3-VsV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
         </scene>
     </scenes>
 </document>

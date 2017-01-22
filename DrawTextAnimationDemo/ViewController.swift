@@ -9,34 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var swiftBox: UIView!
-    @IBOutlet weak var rocksBox: UIView!
+  @IBOutlet weak var swiftLabel: UIStrokeAnimatedLabel!
+  @IBOutlet weak var rocksLabel: UIStrokeAnimatedLabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let swiftFont = CTFontCreateWithName("AvenirNext-UltraLight" as CFString?, 50, nil)
-        let rocksFont = CTFontCreateWithName("Didot" as CFString?, 50, nil)
-        let color = UIColor.gray.cgColor
-        
-        performStrokeAnimation(text: "SWIFT", font: swiftFont, inView: swiftBox)
-        
-        let charSpacing: CGFloat = 20
-        let wordSpacing: CGFloat = 40
-        
-        performStrokeAnimation(text: "ROCKS",
-            font: rocksFont,
-            characterSpacing: charSpacing,
-            wordSpacing: wordSpacing,
-            duration: 4.0,
-            borderWidth: 1.0,
-            borderColor: color,
-            inView: rocksBox)
-
+      
+      swiftLabel.animationDuration = 1.0
+      rocksLabel.animationDuration = 2.0
+      
+      swiftLabel.strokeWidth = .relative(scale: 1.0)
+      rocksLabel.strokeColor = .gray
+      swiftLabel.characterSpacing = .absolute(value: 20.0)
+      rocksLabel.wordSpacing = .relative(scale: 0.5)
+      
+      rocksLabel.disableAnimation = false
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
+  
 }
 
