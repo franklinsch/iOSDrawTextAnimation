@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import UIStrokeAnimatedLabelFramework
 
 class ViewController: UIViewController {
+  
   @IBOutlet weak var swiftLabel: UIStrokeAnimatedLabel!
   @IBOutlet weak var rocksLabel: UIStrokeAnimatedLabel!
     

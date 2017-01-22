@@ -8,18 +8,18 @@
 
 import UIKit
 
-class UIStrokeAnimatedLabel: UILabel {
+public class UIStrokeAnimatedLabel: UILabel {
   
   // MARK: Properties
   
   /// Duration of the stroke animation.
-  var animationDuration = 1.0
+  public var animationDuration = 1.0
   
   /// Disable the stroke animation.
-  var disableAnimation = false
+  public var disableAnimation = false
   
   /// Color of the storke used to draw the label.
-  lazy var strokeColor: UIColor = {
+  public lazy var strokeColor: UIColor = {
     return self.textColor
   }()
   
@@ -37,11 +37,11 @@ class UIStrokeAnimatedLabel: UILabel {
    
    Default value is `.relative(scale: 0.2)`.
   */
-  var strokeWidth: StrokeWidth = .relative(scale: 0.2)
+  public var strokeWidth: StrokeWidth = .relative(scale: 0.2)
   
   /// Reference character to compute stroke width.
   /// Default is `l`.
-  var strokeWidthReferenceCharacter = "l"
+  public var strokeWidthReferenceCharacter = "l"
   
   /**
     Spacing between characters of a word.
@@ -57,7 +57,7 @@ class UIStrokeAnimatedLabel: UILabel {
    
    Default value is `.relative(scale: 1.2)`.
   */
-  var characterSpacing: Spacing = .relative(scale: 0.2)
+  public var characterSpacing: Spacing = .relative(scale: 0.2)
 
   /**
    Spacing between words.
@@ -73,16 +73,16 @@ class UIStrokeAnimatedLabel: UILabel {
    
    Default value is `.relative(scale: 0.5)`.
    */
-  var wordSpacing: Spacing = .relative(scale: 0.5)
+  public var wordSpacing: Spacing = .relative(scale: 0.5)
   
   /// Reference character to compute character spacing and word spacing.
   /// Default is `M`.
-  var spacingReferenceCharacter = "M"
+  public var spacingReferenceCharacter = "M"
   
   // MARK: UILabel
   
   /// Override `draw` to animate the label.
-  override func draw(_ rect: CGRect) {
+  public override func draw(_ rect: CGRect) {
     if disableAnimation {
       super.draw(rect)
     }
@@ -234,7 +234,7 @@ class UIStrokeAnimatedLabel: UILabel {
   // MARK: Enumerations
 
   /// Enum describing a stroke width, which can be set absolutely, or relatively to `strokeWidthReferenceCharacter`'s width.
-  enum StrokeWidth {
+  public enum StrokeWidth {
     
     /// Set the same stroke width between every character of a word.
     case absolute(value: CGFloat)
@@ -244,7 +244,7 @@ class UIStrokeAnimatedLabel: UILabel {
   }
   
   /// Enum describing spacing between characters or words, which can be set absolutely, or relatively to `spacingReferenceCharacter`'s width.
-  enum Spacing {
+  public enum Spacing {
     
     /// Set the same character spacing between every character of a word.
     case absolute(value: CGFloat)
