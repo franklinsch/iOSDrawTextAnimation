@@ -20,12 +20,12 @@ class ViewController: UIViewController {
       swiftLabel.animationDuration = 1.0
       rocksLabel.animationDuration = 2.0
       
-      swiftLabel.strokeWidth = .relative(scale: 1.0)
+      swiftLabel.strokeWidth = .relative(scale: 1.4)
       rocksLabel.strokeColor = .gray
       swiftLabel.characterSpacing = .absolute(value: 20.0)
       rocksLabel.wordSpacing = .relative(scale: 0.5)
       
-      rocksLabel.disableAnimation = false
+      rocksLabel.animationEnabled = true
     }
   
 }

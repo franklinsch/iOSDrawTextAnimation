@@ -13,13 +13,13 @@ public class UIStrokeAnimatedLabel: UILabel {
   // MARK: Properties
   
   /// Duration of the stroke animation.
-  public var animationDuration = 1.0
+  @IBInspectable public var animationDuration: Double = 1.0
   
-  /// Disable the stroke animation.
-  public var disableAnimation = false
+  /// Stroke animation enabled.
+  @IBInspectable public var animationEnabled: Bool = true
   
   /// Color of the storke used to draw the label.
-  public lazy var strokeColor: UIColor = {
+  @IBInspectable public lazy var strokeColor: UIColor = {
     return self.textColor
   }()
   
@@ -41,7 +41,7 @@ public class UIStrokeAnimatedLabel: UILabel {
   
   /// Reference character to compute stroke width.
   /// Default is `l`.
-  public var strokeWidthReferenceCharacter = "l"
+  public var strokeWidthReferenceCharacter: String = "l"
   
   /**
     Spacing between characters of a word.
@@ -77,14 +77,15 @@ public class UIStrokeAnimatedLabel: UILabel {
   
   /// Reference character to compute character spacing and word spacing.
   /// Default is `M`.
-  public var spacingReferenceCharacter = "M"
+  public var spacingReferenceCharacter: String = "M"
   
   // MARK: UILabel
   
   /// Override `draw` to animate the label.
   public override func draw(_ rect: CGRect) {
-    if disableAnimation {
+    if !animationEnabled {
       super.draw(rect)
+      return
     }
     
     performStrokeAnimation()
