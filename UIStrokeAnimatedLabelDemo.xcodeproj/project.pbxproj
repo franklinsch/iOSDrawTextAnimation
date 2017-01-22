@@ -28,14 +28,14 @@
 
 /* Begin PBXFileReference section */
 		0E2E677F1E33F30A0071A50A /* UIStrokeAnimatedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStrokeAnimatedLabel.swift; sourceTree = "<group>"; };
-		25DB0EB01B93286900E65E08 /* UIStrokeAnimatedLabel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIStrokeAnimatedLabel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		25DB0EB01B93286900E65E08 /* UIStrokeAnimatedLabelDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIStrokeAnimatedLabelDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25DB0EB41B93286900E65E08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25DB0EB51B93286900E65E08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25DB0EBA1B93286900E65E08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		25DB0EBD1B93286900E65E08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		25DB0EBF1B93286900E65E08 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		25DB0EC21B93286900E65E08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		25DB0EC81B93286900E65E08 /* UIStrokeAnimatedLabelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIStrokeAnimatedLabelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		25DB0EC81B93286900E65E08 /* UIStrokeAnimatedLabelDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIStrokeAnimatedLabelDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25DB0ECD1B93286900E65E08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25DB0ECE1B93286900E65E08 /* DrawTextAnimationDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawTextAnimationDemoTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,8 +70,8 @@
 		25DB0EB11B93286900E65E08 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				25DB0EB01B93286900E65E08 /* UIStrokeAnimatedLabel.app */,
-				25DB0EC81B93286900E65E08 /* UIStrokeAnimatedLabelTests.xctest */,
+				25DB0EB01B93286900E65E08 /* UIStrokeAnimatedLabelDemo.app */,
+				25DB0EC81B93286900E65E08 /* UIStrokeAnimatedLabelDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,9 +119,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		25DB0EAF1B93286900E65E08 /* UIStrokeAnimatedLabel */ = {
+		25DB0EAF1B93286900E65E08 /* UIStrokeAnimatedLabelDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 25DB0ED21B93286900E65E08 /* Build configuration list for PBXNativeTarget "UIStrokeAnimatedLabel" */;
+			buildConfigurationList = 25DB0ED21B93286900E65E08 /* Build configuration list for PBXNativeTarget "UIStrokeAnimatedLabelDemo" */;
 			buildPhases = (
 				25DB0EAC1B93286900E65E08 /* Sources */,
 				25DB0EAD1B93286900E65E08 /* Frameworks */,
@@ -131,14 +131,14 @@
 			);
 			dependencies = (
 			);
-			name = UIStrokeAnimatedLabel;
+			name = UIStrokeAnimatedLabelDemo;
 			productName = DrawTextAnimationDemo;
-			productReference = 25DB0EB01B93286900E65E08 /* UIStrokeAnimatedLabel.app */;
+			productReference = 25DB0EB01B93286900E65E08 /* UIStrokeAnimatedLabelDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		25DB0EC71B93286900E65E08 /* UIStrokeAnimatedLabelTests */ = {
+		25DB0EC71B93286900E65E08 /* UIStrokeAnimatedLabelDemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 25DB0ED51B93286900E65E08 /* Build configuration list for PBXNativeTarget "UIStrokeAnimatedLabelTests" */;
+			buildConfigurationList = 25DB0ED51B93286900E65E08 /* Build configuration list for PBXNativeTarget "UIStrokeAnimatedLabelDemoTests" */;
 			buildPhases = (
 				25DB0EC41B93286900E65E08 /* Sources */,
 				25DB0EC51B93286900E65E08 /* Frameworks */,
@@ -149,9 +149,9 @@
 			dependencies = (
 				25DB0ECA1B93286900E65E08 /* PBXTargetDependency */,
 			);
-			name = UIStrokeAnimatedLabelTests;
+			name = UIStrokeAnimatedLabelDemoTests;
 			productName = DrawTextAnimationDemoTests;
-			productReference = 25DB0EC81B93286900E65E08 /* UIStrokeAnimatedLabelTests.xctest */;
+			productReference = 25DB0EC81B93286900E65E08 /* UIStrokeAnimatedLabelDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -177,7 +177,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 25DB0EAB1B93286900E65E08 /* Build configuration list for PBXProject "UIStrokeAnimatedLabel" */;
+			buildConfigurationList = 25DB0EAB1B93286900E65E08 /* Build configuration list for PBXProject "UIStrokeAnimatedLabelDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -190,8 +190,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				25DB0EAF1B93286900E65E08 /* UIStrokeAnimatedLabel */,
-				25DB0EC71B93286900E65E08 /* UIStrokeAnimatedLabelTests */,
+				25DB0EAF1B93286900E65E08 /* UIStrokeAnimatedLabelDemo */,
+				25DB0EC71B93286900E65E08 /* UIStrokeAnimatedLabelDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -240,7 +240,7 @@
 /* Begin PBXTargetDependency section */
 		25DB0ECA1B93286900E65E08 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 25DB0EAF1B93286900E65E08 /* UIStrokeAnimatedLabel */;
+			target = 25DB0EAF1B93286900E65E08 /* UIStrokeAnimatedLabelDemo */;
 			targetProxy = 25DB0EC91B93286900E65E08 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -397,7 +397,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.franklinschrans.com.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIStrokeAnimatedLabel.app/UIStrokeAnimatedLabel";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIStrokeAnimatedLabelDemo.app/UIStrokeAnimatedLabelDemo";
 			};
 			name = Debug;
 		};
@@ -414,14 +414,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.franklinschrans.com.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIStrokeAnimatedLabel.app/UIStrokeAnimatedLabel";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIStrokeAnimatedLabelDemo.app/UIStrokeAnimatedLabelDemo";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		25DB0EAB1B93286900E65E08 /* Build configuration list for PBXProject "UIStrokeAnimatedLabel" */ = {
+		25DB0EAB1B93286900E65E08 /* Build configuration list for PBXProject "UIStrokeAnimatedLabelDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				25DB0ED01B93286900E65E08 /* Debug */,
@@ -430,7 +430,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		25DB0ED21B93286900E65E08 /* Build configuration list for PBXNativeTarget "UIStrokeAnimatedLabel" */ = {
+		25DB0ED21B93286900E65E08 /* Build configuration list for PBXNativeTarget "UIStrokeAnimatedLabelDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				25DB0ED31B93286900E65E08 /* Debug */,
@@ -439,7 +439,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		25DB0ED51B93286900E65E08 /* Build configuration list for PBXNativeTarget "UIStrokeAnimatedLabelTests" */ = {
+		25DB0ED51B93286900E65E08 /* Build configuration list for PBXNativeTarget "UIStrokeAnimatedLabelDemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				25DB0ED61B93286900E65E08 /* Debug */,
