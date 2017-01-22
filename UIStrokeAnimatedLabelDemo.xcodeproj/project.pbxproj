@@ -7,39 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E04ADD31E34D93D00585765 /* UIStrokeAnimatedLabelFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E04ADD21E34D91D00585765 /* UIStrokeAnimatedLabelFramework.framework */; };
+		0E04ADD41E34D93D00585765 /* UIStrokeAnimatedLabelFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0E04ADD21E34D91D00585765 /* UIStrokeAnimatedLabelFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		25DB0EB61B93286900E65E08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DB0EB51B93286900E65E08 /* AppDelegate.swift */; };
-		25DB0EB91B93286900E65E08 /* DrawTextAnimationDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 25DB0EB71B93286900E65E08 /* DrawTextAnimationDemo.xcdatamodeld */; };
 		25DB0EBB1B93286900E65E08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DB0EBA1B93286900E65E08 /* ViewController.swift */; };
 		25DB0EBE1B93286900E65E08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25DB0EBC1B93286900E65E08 /* Main.storyboard */; };
 		25DB0EC01B93286900E65E08 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25DB0EBF1B93286900E65E08 /* Images.xcassets */; };
 		25DB0EC31B93286900E65E08 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25DB0EC11B93286900E65E08 /* LaunchScreen.xib */; };
-		25DB0ECF1B93286900E65E08 /* DrawTextAnimationDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DB0ECE1B93286900E65E08 /* DrawTextAnimationDemoTests.swift */; };
-		25DB0ED91B932ED600E65E08 /* StrokeAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DB0ED81B932ED600E65E08 /* StrokeAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		25DB0EC91B93286900E65E08 /* PBXContainerItemProxy */ = {
+		0E04ADD11E34D91D00585765 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 25DB0EA81B93286900E65E08 /* Project object */;
+			containerPortal = 0E04ADBB1E34D86A00585765 /* UIStrokeAnimatedLabelFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0EFAD65F1E34CF08003B5DF0;
+			remoteInfo = UIStrokeAnimatedLabelFramework;
+		};
+		0E04ADD51E34D93D00585765 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E04ADBB1E34D86A00585765 /* UIStrokeAnimatedLabelFramework.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 25DB0EAF1B93286900E65E08;
-			remoteInfo = DrawTextAnimationDemo;
+			remoteGlobalIDString = 0EFAD65E1E34CF08003B5DF0;
+			remoteInfo = UIStrokeAnimatedLabelFramework;
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0EDB77781E34D3FB007912C3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0E04ADD41E34D93D00585765 /* UIStrokeAnimatedLabelFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		25DB0EB01B93286900E65E08 /* DrawTextAnimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawTextAnimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E04ADBB1E34D86A00585765 /* UIStrokeAnimatedLabelFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UIStrokeAnimatedLabelFramework.xcodeproj; path = UIStrokeAnimatedLabel/UIStrokeAnimatedLabelFramework.xcodeproj; sourceTree = "<group>"; };
+		25DB0EB01B93286900E65E08 /* UIStrokeAnimatedLabelDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIStrokeAnimatedLabelDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25DB0EB41B93286900E65E08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25DB0EB51B93286900E65E08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		25DB0EB81B93286900E65E08 /* DrawTextAnimationDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DrawTextAnimationDemo.xcdatamodel; sourceTree = "<group>"; };
 		25DB0EBA1B93286900E65E08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		25DB0EBD1B93286900E65E08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		25DB0EBF1B93286900E65E08 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		25DB0EC21B93286900E65E08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		25DB0EC81B93286900E65E08 /* DrawTextAnimationDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawTextAnimationDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25DB0ECD1B93286900E65E08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		25DB0ECE1B93286900E65E08 /* DrawTextAnimationDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawTextAnimationDemoTests.swift; sourceTree = "<group>"; };
-		25DB0ED81B932ED600E65E08 /* StrokeAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrokeAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,23 +64,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		25DB0EC51B93286900E65E08 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				0E04ADD31E34D93D00585765 /* UIStrokeAnimatedLabelFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E04ADCE1E34D91D00585765 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0E04ADD21E34D91D00585765 /* UIStrokeAnimatedLabelFramework.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		25DB0EA71B93286900E65E08 = {
 			isa = PBXGroup;
 			children = (
-				25DB0EB21B93286900E65E08 /* DrawTextAnimationDemo */,
+				0E04ADBB1E34D86A00585765 /* UIStrokeAnimatedLabelFramework.xcodeproj */,
+				25DB0EB21B93286900E65E08 /* UIStrokeAnimatedLabelDemo */,
 				25DB0ECB1B93286900E65E08 /* DrawTextAnimationDemoTests */,
 				25DB0EB11B93286900E65E08 /* Products */,
 			);
@@ -72,25 +92,23 @@
 		25DB0EB11B93286900E65E08 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				25DB0EB01B93286900E65E08 /* DrawTextAnimationDemo.app */,
-				25DB0EC81B93286900E65E08 /* DrawTextAnimationDemoTests.xctest */,
+				25DB0EB01B93286900E65E08 /* UIStrokeAnimatedLabelDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		25DB0EB21B93286900E65E08 /* DrawTextAnimationDemo */ = {
+		25DB0EB21B93286900E65E08 /* UIStrokeAnimatedLabelDemo */ = {
 			isa = PBXGroup;
 			children = (
 				25DB0EB51B93286900E65E08 /* AppDelegate.swift */,
 				25DB0EBA1B93286900E65E08 /* ViewController.swift */,
-				25DB0ED81B932ED600E65E08 /* StrokeAnimator.swift */,
 				25DB0EBC1B93286900E65E08 /* Main.storyboard */,
 				25DB0EBF1B93286900E65E08 /* Images.xcassets */,
 				25DB0EC11B93286900E65E08 /* LaunchScreen.xib */,
-				25DB0EB71B93286900E65E08 /* DrawTextAnimationDemo.xcdatamodeld */,
 				25DB0EB31B93286900E65E08 /* Supporting Files */,
 			);
-			path = DrawTextAnimationDemo;
+			name = UIStrokeAnimatedLabelDemo;
+			path = UIStrokeAnimatedLabelDemo/DrawTextAnimationDemo;
 			sourceTree = "<group>";
 		};
 		25DB0EB31B93286900E65E08 /* Supporting Files */ = {
@@ -104,10 +122,10 @@
 		25DB0ECB1B93286900E65E08 /* DrawTextAnimationDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				25DB0ECE1B93286900E65E08 /* DrawTextAnimationDemoTests.swift */,
 				25DB0ECC1B93286900E65E08 /* Supporting Files */,
 			);
-			path = DrawTextAnimationDemoTests;
+			name = DrawTextAnimationDemoTests;
+			path = UIStrokeAnimatedLabelDemo/DrawTextAnimationDemoTests;
 			sourceTree = "<group>";
 		};
 		25DB0ECC1B93286900E65E08 /* Supporting Files */ = {
@@ -121,40 +139,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		25DB0EAF1B93286900E65E08 /* DrawTextAnimationDemo */ = {
+		25DB0EAF1B93286900E65E08 /* UIStrokeAnimatedLabelDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 25DB0ED21B93286900E65E08 /* Build configuration list for PBXNativeTarget "DrawTextAnimationDemo" */;
+			buildConfigurationList = 25DB0ED21B93286900E65E08 /* Build configuration list for PBXNativeTarget "UIStrokeAnimatedLabelDemo" */;
 			buildPhases = (
 				25DB0EAC1B93286900E65E08 /* Sources */,
 				25DB0EAD1B93286900E65E08 /* Frameworks */,
 				25DB0EAE1B93286900E65E08 /* Resources */,
+				0EDB77781E34D3FB007912C3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0E04ADD61E34D93D00585765 /* PBXTargetDependency */,
 			);
-			name = DrawTextAnimationDemo;
+			name = UIStrokeAnimatedLabelDemo;
 			productName = DrawTextAnimationDemo;
-			productReference = 25DB0EB01B93286900E65E08 /* DrawTextAnimationDemo.app */;
+			productReference = 25DB0EB01B93286900E65E08 /* UIStrokeAnimatedLabelDemo.app */;
 			productType = "com.apple.product-type.application";
-		};
-		25DB0EC71B93286900E65E08 /* DrawTextAnimationDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 25DB0ED51B93286900E65E08 /* Build configuration list for PBXNativeTarget "DrawTextAnimationDemoTests" */;
-			buildPhases = (
-				25DB0EC41B93286900E65E08 /* Sources */,
-				25DB0EC51B93286900E65E08 /* Frameworks */,
-				25DB0EC61B93286900E65E08 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				25DB0ECA1B93286900E65E08 /* PBXTargetDependency */,
-			);
-			name = DrawTextAnimationDemoTests;
-			productName = DrawTextAnimationDemoTests;
-			productReference = 25DB0EC81B93286900E65E08 /* DrawTextAnimationDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -172,14 +174,9 @@
 						DevelopmentTeam = 5QKHN66STV;
 						LastSwiftMigration = 0820;
 					};
-					25DB0EC71B93286900E65E08 = {
-						CreatedOnToolsVersion = 6.4;
-						LastSwiftMigration = 0820;
-						TestTargetID = 25DB0EAF1B93286900E65E08;
-					};
 				};
 			};
-			buildConfigurationList = 25DB0EAB1B93286900E65E08 /* Build configuration list for PBXProject "DrawTextAnimationDemo" */;
+			buildConfigurationList = 25DB0EAB1B93286900E65E08 /* Build configuration list for PBXProject "UIStrokeAnimatedLabelDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -190,13 +187,28 @@
 			mainGroup = 25DB0EA71B93286900E65E08;
 			productRefGroup = 25DB0EB11B93286900E65E08 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0E04ADCE1E34D91D00585765 /* Products */;
+					ProjectRef = 0E04ADBB1E34D86A00585765 /* UIStrokeAnimatedLabelFramework.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
-				25DB0EAF1B93286900E65E08 /* DrawTextAnimationDemo */,
-				25DB0EC71B93286900E65E08 /* DrawTextAnimationDemoTests */,
+				25DB0EAF1B93286900E65E08 /* UIStrokeAnimatedLabelDemo */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0E04ADD21E34D91D00585765 /* UIStrokeAnimatedLabelFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = UIStrokeAnimatedLabelFramework.framework;
+			remoteRef = 0E04ADD11E34D91D00585765 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		25DB0EAE1B93286900E65E08 /* Resources */ = {
@@ -209,13 +221,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		25DB0EC61B93286900E65E08 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -224,27 +229,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				25DB0EBB1B93286900E65E08 /* ViewController.swift in Sources */,
-				25DB0EB91B93286900E65E08 /* DrawTextAnimationDemo.xcdatamodeld in Sources */,
-				25DB0ED91B932ED600E65E08 /* StrokeAnimator.swift in Sources */,
 				25DB0EB61B93286900E65E08 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		25DB0EC41B93286900E65E08 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				25DB0ECF1B93286900E65E08 /* DrawTextAnimationDemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		25DB0ECA1B93286900E65E08 /* PBXTargetDependency */ = {
+		0E04ADD61E34D93D00585765 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 25DB0EAF1B93286900E65E08 /* DrawTextAnimationDemo */;
-			targetProxy = 25DB0EC91B93286900E65E08 /* PBXContainerItemProxy */;
+			name = UIStrokeAnimatedLabelFramework;
+			targetProxy = 0E04ADD51E34D93D00585765 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -358,11 +353,13 @@
 		25DB0ED31B93286900E65E08 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5QKHN66STV;
-				INFOPLIST_FILE = DrawTextAnimationDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/UIStrokeAnimatedLabelDemo/DrawTextAnimationDemo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.franklinschrans.com.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.franklinschrans.com.UIStrokeAnimatedLabelDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -371,58 +368,22 @@
 		25DB0ED41B93286900E65E08 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5QKHN66STV;
-				INFOPLIST_FILE = DrawTextAnimationDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/UIStrokeAnimatedLabelDemo/DrawTextAnimationDemo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.franklinschrans.com.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.franklinschrans.com.UIStrokeAnimatedLabelDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		25DB0ED61B93286900E65E08 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/System/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = DrawTextAnimationDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.franklinschrans.com.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrawTextAnimationDemo.app/DrawTextAnimationDemo";
-			};
-			name = Debug;
-		};
-		25DB0ED71B93286900E65E08 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/System/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = DrawTextAnimationDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.franklinschrans.com.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrawTextAnimationDemo.app/DrawTextAnimationDemo";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		25DB0EAB1B93286900E65E08 /* Build configuration list for PBXProject "DrawTextAnimationDemo" */ = {
+		25DB0EAB1B93286900E65E08 /* Build configuration list for PBXProject "UIStrokeAnimatedLabelDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				25DB0ED01B93286900E65E08 /* Debug */,
@@ -431,7 +392,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		25DB0ED21B93286900E65E08 /* Build configuration list for PBXNativeTarget "DrawTextAnimationDemo" */ = {
+		25DB0ED21B93286900E65E08 /* Build configuration list for PBXNativeTarget "UIStrokeAnimatedLabelDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				25DB0ED31B93286900E65E08 /* Debug */,
@@ -440,29 +401,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		25DB0ED51B93286900E65E08 /* Build configuration list for PBXNativeTarget "DrawTextAnimationDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				25DB0ED61B93286900E65E08 /* Debug */,
-				25DB0ED71B93286900E65E08 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		25DB0EB71B93286900E65E08 /* DrawTextAnimationDemo.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				25DB0EB81B93286900E65E08 /* DrawTextAnimationDemo.xcdatamodel */,
-			);
-			currentVersion = 25DB0EB81B93286900E65E08 /* DrawTextAnimationDemo.xcdatamodel */;
-			path = DrawTextAnimationDemo.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 25DB0EA81B93286900E65E08 /* Project object */;
 }
