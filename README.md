@@ -20,7 +20,7 @@ A `UIStrokeAnimatedLabel` can be created and customized through Interface Builde
 
 ### Interface Builder
 
-1. Drag a `UILabel` into a view
+1. Drag a `UILabel` into a view.
 2. Set the label's class to `UIStrokeAnimatedLabel`. You might also need to set the Module name to `UIStrokeAnimatedLabelFramework` if using CocoaPods.
 
 ![UIStrokeAnimatedLabel Interface Builder Setup](ib-setup.png) 
