@@ -8,10 +8,6 @@ Animation duration, stroke width and spacing and easily customizable through Int
 
 ## Installation
 
-### CocoaPods
-Coming soon.
-
-### Manually
 Copy `UIStrokeAnimatedLabel/UIStrokeAnimatedLabel/UIStrokeAnimatedLabel.swift` directly in your project.
 
 ## Usage and customization
