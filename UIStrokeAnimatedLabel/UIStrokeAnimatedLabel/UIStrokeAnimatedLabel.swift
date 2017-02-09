@@ -79,6 +79,8 @@ public class UIStrokeAnimatedLabel: UILabel {
   /// Default is `M`.
   public var spacingReferenceCharacter: String = "M"
   
+  public var completionHandler: (() -> Void)?
+  
   // MARK: UILabel
   
   /// Override `draw` to animate the label.
@@ -114,7 +116,14 @@ public class UIStrokeAnimatedLabel: UILabel {
     animation.fromValue = 0
     animation.toValue = 1
     
+    CATransaction.begin()
+    
+    if let completionHandler = completionHandler {
+      CATransaction.setCompletionBlock(completionHandler)
+    }
+    
     animateSublayers(textView.layer, animation: animation)
+    CATransaction.commit()
   }
   
   /// Creates a `CALayer` representing `text` using the the label's properties.
@@ -214,6 +223,7 @@ public class UIStrokeAnimatedLabel: UILabel {
   
   private func animateSublayers(_ layer: CALayer, animation: CAAnimation) {
     let sublayers = layer.sublayers!
+    
     for sublayer in sublayers {
       if sublayer.sublayers != nil {
         animateSublayers(sublayer, animation: animation)
