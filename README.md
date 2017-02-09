@@ -8,7 +8,9 @@ Animation duration, stroke width and spacing and easily customizable through Int
 
 ## Installation
 
-Copy `UIStrokeAnimatedLabel/UIStrokeAnimatedLabel/UIStrokeAnimatedLabel.swift` directly in your project.
+Build and link the `UIStrokeAnimatedLabel` framework (`UIStrokeAnimatedLabel/UIStrokeAnimatedLabelFramework.xcodeproj`).
+
+Alternatively, copy `UIStrokeAnimatedLabel/UIStrokeAnimatedLabel/UIStrokeAnimatedLabel.swift` directly in your project.
 
 ## Usage and customization
 
