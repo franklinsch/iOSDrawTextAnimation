@@ -47,6 +47,10 @@ Create `IBOutlet`s or create the labels programatically.
       rocksLabel.wordSpacing = .relative(scale: 0.5)
 
       rocksLabel.animationEnabled = true
+      
+      rocksLabel.completionHandler = {
+        print("Animation complete")
+      }
   }
 
 ```
