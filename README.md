@@ -54,5 +54,5 @@ Create `IBOutlet`s or create the labels programatically.
   }
 
 ```
-##License
+## License
 MIT, see LICENSE for details.
